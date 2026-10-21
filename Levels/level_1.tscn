@@ -1,6 +1,6 @@
-[gd_scene format=4 uid="uid://doo8d4iefbm52"]
+[gd_scene format=4 uid="uid://ddi7gv8axd1u3"]
 
-[ext_resource type="Script" path="res://Code/level_1.gd" id="1_lk57d"]
+[ext_resource type="Script" uid="uid://263oydq3klf4" path="res://Code/level_1.gd" id="1_lk57d"]
 [ext_resource type="PackedScene" uid="uid://bywlgwdddk68" path="res://Scenes/player.tscn" id="1_n0qsc"]
 [ext_resource type="Script" uid="uid://c6kxvfqr4ewu1" path="res://addons/rmsmartshape/shapes/shape_closed.gd" id="2_rs4xw"]
 [ext_resource type="Script" uid="uid://bwcf4pjgprn0k" path="res://addons/rmsmartshape/shapes/point.gd" id="3_lk57d"]

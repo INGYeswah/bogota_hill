@@ -15,7 +15,7 @@ ss2d/version="3.3.2"
 [application]
 
 config/name="hill_climb"
-run/main_scene="uid://doo8d4iefbm52"
+run/main_scene="uid://ddi7gv8axd1u3"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

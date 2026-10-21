@@ -1,7 +1,0 @@
-res://Scenes/player.tscn
-res://Code/player.gd
-res://Levels/level_1.tscn
-res://Code/coin.gd
-res://Code/level_1.gd
-res://Scenes/coin.tscn
-res://Scenes/ui.tscn
