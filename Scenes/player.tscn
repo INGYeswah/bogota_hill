@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ds4s26sn82x5f" path="res://Images/Car/RedCar.png" id="3_6t5aa"]
 
 [node name="Player" type="RigidBody2D" unique_id=1828145870 groups=["player"]]
+process_mode = 3
 script = ExtResource("1_6t5aa")
 
 [node name="WheelHolder" type="PinJoint2D" parent="." unique_id=1515091349]
@@ -28,3 +29,9 @@ texture = ExtResource("3_6t5aa")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=484885941]
 polygon = PackedVector2Array(-221, 72, -184, 100, 188, 98, 217, 72, 216, -8, 8, -60, -200, -62, -220, -42)
+
+[node name="GameOverTimer" type="Timer" parent="." unique_id=546423652]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="GameOverTimer" to="." method="_on_game_over_timer_timeout"]

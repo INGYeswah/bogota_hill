@@ -1,4 +1,6 @@
 Label
+Timer
+ProgressBar
 TextureRect
 CanvasLayer
 AudioStreamPlayer
