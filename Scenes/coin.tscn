@@ -5,6 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://ctyq0hptjpu0x" path="res://Audio/Coin.wav" id="3_g537i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fgw4b"]
+radius = 65.0
 
 [sub_resource type="Animation" id="Animation_h2p6v"]
 length = 0.001
@@ -78,7 +79,9 @@ _data = {
 &"pickup": SubResource("Animation_ffmqm")
 }
 
-[node name="Coin" type="Area2D" unique_id=640739553]
+[node name="Coin" type="Area2D" unique_id=640739553 groups=["coin_pickup"]]
+collision_layer = 0
+collision_mask = 2
 script = ExtResource("1_0t63x")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2058782531]

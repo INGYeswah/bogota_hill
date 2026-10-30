@@ -17,6 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://xdbfxdyh1dt2" path="res://Scenes/ui.tscn" id="15_34erp"]
 [ext_resource type="PackedScene" uid="uid://dov1g2b2cb08d" path="res://Scenes/fuel.tscn" id="16_k2bse"]
 
+[ext_resource type="Script" path="res://Code/background.gd" id="17_bg"]
+[ext_resource type="Script" path="res://Code/finish_flag.gd" id="18_finish"]
+
 [sub_resource type="Resource" id="Resource_8x6gh"]
 script = ExtResource("3_lk57d")
 position = Vector2(9737.934, -90.37744)
@@ -207,6 +210,9 @@ fill_textures = Array[Texture2D]([ExtResource("6_k2bse")])
 [node name="level1" type="Node2D" unique_id=176772755]
 script = ExtResource("1_lk57d")
 
+[node name="Background" type="Node2D" parent="."]
+script = ExtResource("17_bg")
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=325386262]
 
 [node name="SS2D_Shape_Closed" type="Node2D" parent="StaticBody2D" unique_id=846113370]
@@ -228,7 +234,11 @@ position = Vector2(-85, -26)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1282361060]
 position = Vector2(132, 114)
-zoom = Vector2(0.3, 0.3)
+zoom = Vector2(0.38, 0.38)
+ignore_rotation = true
+position_smoothing_enabled = true
+position_smoothing_speed = 6.0
+limit_bottom = 3500
 drag_horizontal_offset = 0.57
 drag_left_margin = 0.8
 editor_draw_drag_margin = true
@@ -269,4 +279,24 @@ position = Vector2(14990, 1348)
 [node name="UI" parent="." unique_id=1671642073 instance=ExtResource("15_34erp")]
 
 [node name="Fuel" parent="." unique_id=53896144 instance=ExtResource("16_k2bse")]
-position = Vector2(5465, 1272)
+position = Vector2(5465, 1338)
+
+[node name="Fuel2" parent="." instance=ExtResource("16_k2bse")]
+position = Vector2(10150, 517)
+
+[node name="Fuel3" parent="." instance=ExtResource("16_k2bse")]
+position = Vector2(15350, 1329)
+
+[node name="FinishFlag" type="Node2D" parent="."]
+position = Vector2(16350, 1050)
+script = ExtResource("18_finish")
+
+[node name="Label" type="Label" parent="FinishFlag"]
+offset_left = -90.0
+offset_top = -460.0
+offset_right = 180.0
+offset_bottom = -380.0
+theme_override_colors/font_color = Color(0.12, 0.2, 0.25, 1)
+theme_override_font_sizes/font_size = 70
+text = "META"
+horizontal_alignment = 1

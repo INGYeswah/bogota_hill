@@ -79,7 +79,9 @@ _data = {
 &"pickup": SubResource("Animation_ffmqm")
 }
 
-[node name="Fuel" type="Area2D" unique_id=640739553]
+[node name="Fuel" type="Area2D" unique_id=640739553 groups=["fuel_pickup"]]
+collision_layer = 0
+collision_mask = 2
 script = ExtResource("1_7kkyi")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2058782531]
