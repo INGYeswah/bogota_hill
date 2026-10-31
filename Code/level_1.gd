@@ -4,7 +4,7 @@ enum RunState { RUNNING, PAUSED, FINISHED }
 
 const SAVE_PATH := "user://records.cfg"
 const METERS_PER_PIXEL := 0.05
-const FINISH_X := 16350.0
+const FINISH_X := 54519.0
 
 @export var save_path: String = SAVE_PATH
 

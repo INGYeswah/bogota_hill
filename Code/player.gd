@@ -4,7 +4,7 @@ signal fuel_changed(value: float)
 signal crashed(reason: String)
 
 @export var motor_torque: float = 300000.0
-@export var max_wheel_speed: float = 18.0
+@export var max_wheel_speed: float = 40.0
 @export var air_rotation_torque: float = 180000.0
 @export var fuel_consumption: float = 6.5
 
